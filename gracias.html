@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Chimpancé &amp; Idées</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="dorne-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area" id="header">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 ">
+                    <nav class="h-100 navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                        <!-- Nav -->
+                        <div class="collapse navbar-collapse" id="dorneNav">
+                            <ul class="navbar-nav mr-auto" id="dorneMenu">
+                                <li class="nav-item active">
+                                  
+                                </li>
+                                <li class="nav-item dropdown">
+                                   
+                                </li>
+                                <li class="nav-item dropdown">
+                                   
+                                </li>
+                                <li class="nav-item">
+                                   
+                                </li>
+                            </ul>
+                            <!-- Search btn -->
+                            <div class="dorne-search-btn">
+                                <a href="index.html#servicios"> Servicios</a>
+                            </div>
+                            <!-- Signin btn -->
+                            <div class="dorne-signin-btn">
+                                <a href="index.html#contacto">Contacto</a>
+                            </div>
+                            <!-- Add listings btn -->
+                            <div class="dorne-add-listings-btn">
+                                <a href="index.html#contacto" class="btn dorne-btn">Ir a la cima</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section id="home-banner-box" class="home-banner loading d-sm-none d-xs-none">
+        <div class="image video-slide" style="background-image: url(img/bg-img/hero-1.jpg)">
+            <div class="video-background ">
+                <div class="video-foreground" id="YouTubeBackgroundVideoPlayer">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="dorne-welcome-area bg-img bg-overlay">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-10 text-center">
+                    <div class="hero-content">
+                        <h2>Mensaje Enviado</h2>
+                        <!-- <h4>Pronto nos contactaremos para llevar tu producto turístico a lo más alto</h4> -->
+                        <p>Pronto nos contactaremos para llevar tu producto turístico a lo más alto</p>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <section class="nubes">
+        <img src="img/bg-img/nubes.png" alt="">
+    </section>
+
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- youtube -->
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+    var player;
+    player = new YT.Player('YouTubeBackgroundVideoPlayer', {
+        videoId: 'jngJ-8BVO1Q', // YouTube Video ID
+        width: '100%',               // Player width (in px)
+        height: '100%',              // Player height (in px)
+        playerVars: {
+            playlist: '{$loadYouTubeVideoID}',
+            autoplay: 1,        // Auto-play the video on load
+            autohide: 1,
+            disablekb: 1, 
+            controls: 0,        // Hide pause/play buttons in player
+            showinfo: 0,        // Hide the video title
+            modestbranding: 1,  // Hide the Youtube Logo
+            loop: 1,            // Run the video in a loop
+            fs: 0,              // Hide the full screen button
+            autohide: 0,         // Hide video controls when playing
+            rel: 0,
+            enablejsapi: 1
+        },
+        events: {
+            onReady: function(e) {
+                e.target.mute();
+                e.target.setPlaybackQuality('hd1080');
+            },
+            onStateChange: function(e) {
+            if(e && e.data === 1){
+                var videoHolder = document.getElementById('home-banner-box');
+                if(videoHolder && videoHolder.id){
+                    videoHolder.classList.remove('loading');
+                }
+            }else if(e && e.data === 0){
+                e.target.playVideo()
+            }
+            }
+        }
+    });
+    }
+</script>
+</body>
+
+</html>

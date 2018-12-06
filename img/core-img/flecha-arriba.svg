@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.451 164.468">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 6px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="flecha-arriba" transform="translate(-926.5 -829.032)">
+    <path id="Path_199" data-name="Path 199" class="cls-1" d="M-2723.152,822.258l30.226-30.226,30.226,30.226" transform="translate(3652.652 40)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" y2="159" transform="translate(959.5 834.5)"/>
+  </g>
+</svg>

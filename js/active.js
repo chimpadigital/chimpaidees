@@ -4,11 +4,11 @@
     if ($.fn.owlCarousel) {
         // Hero Slider Active Code
         $(".features-slides").owlCarousel({
-            items: 5,
-            loop: true,
+            items: 4,
+            loop: false,
             autoplay: false,
             smartSpeed: 2000,
-            margin: 50,
+            margin: 20,
             nav: false,
             responsive: {
                 0: {

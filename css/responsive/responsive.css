@@ -146,6 +146,7 @@
     }
     .navbar-brand {
         margin-right: 0;
+        width: 50%;
     }
     .navbar-toggler {
         border: 2px solid #fff;
@@ -159,7 +160,7 @@
     }
     #dorneNav {
         padding: 15px;
-        background-color: #341a79;
+        background-color: #0169a7;
         box-shadow: 1px 9px 10px rgba(255, 255, 255, 0.15);
         border-radius: 0 0 3px 3px
     }
@@ -171,7 +172,7 @@
     }
     .hero-content h2 {
         color: #fff;
-        font-size: 24px;
+        font-size: 40px;
     }
     .hero-social-btn {
         display: none;
@@ -189,7 +190,7 @@
     }
     .hero-content h4 {
         padding-left: 0;
-        font-size: 16px;
+        font-size: 27px;
     }
     .hero-search-form .tab-content .tab-pane h6 {
         font-size: 16px;
@@ -300,6 +301,46 @@
     }
     .dorne-map-area {
         height: 500px;
+    }
+    .nubes {
+        position: absolute;
+        bottom: 32px;
+        margin-top:0;
+    }
+    .servicios-top {
+        margin-top: -240px;
+    }
+    .dorne-welcome-area {
+        height: 95vh;
+    }
+    .flecha-hero {
+        bottom: 0%;
+    }
+    .servicios-bottom {
+        margin-bottom: -245px;
+    }
+    .mountains::before {
+        height: 18%; 
+        top: -159px;  
+    }
+    .mountains::after{height: 10%;
+        bottom: -111px;}
+    .single-features-area .price-start{height: 82%;}
+    .icono-form {
+        width: 30%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    #scrollUp{display: none!important;}
+    .sticky #header div div div nav a img {
+        height:auto;
+    }
+    .navbar{    margin-top: 14px;}
+    .single-editors-pick-area {
+        height: 600px!important;
+    }
+    .cta-form h1{
+        font-size: 40px;
     }
 }
 
